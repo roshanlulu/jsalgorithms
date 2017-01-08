@@ -1,9 +1,8 @@
 
 function palindrome(str) {
-    str = str.toLowerCase().split('').filter(function (item) {
-        return item.match(/[a-z]|\d/);
-    });
-    return str.join('') === str.reverse().join('');
+  var regex = /[^a-z0-9]/g;
+  var cleanstr = str.toLowerCase().replace(regex, '');
+  return cleanstr.split('').reverse().join('') === cleanstr;
 }
 
 var teststring = "not a palindrome";
