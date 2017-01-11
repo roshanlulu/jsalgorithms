@@ -3,5 +3,3 @@ function factorialize(num) {
 }
 
 console.log('Factorial of 20 = ' + factorialize(20));
-
-
